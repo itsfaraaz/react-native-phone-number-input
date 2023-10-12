@@ -302,6 +302,8 @@ export default class PhoneInput extends Component<
   getNumberAfterPossiblyEliminatingZero: () => {number: string , formattedNumber: string };
   onChangeText: (text: string) => void;
   render(): JSX.Element;
+  blur(): void;
+  focus(): void;
 }
 
 export function isValidNumber(number: string, countryCode: CountryCode ): boolean;
